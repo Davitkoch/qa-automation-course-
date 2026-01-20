@@ -16,3 +16,5 @@ city = "NYC";
 
 // showing the code in terminal
 console.log(myName, age, birthYear, placeOfbirth, city, currentYear);
+
+//test
