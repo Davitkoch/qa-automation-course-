@@ -17,3 +17,7 @@ if (8 > 6 && 1) {
 if (5 < 3 || 5 < 4) {
   console.log("hi,NYC"); //will print it because one of this conditions is true
 }
+
+let true = 0 || "david";
+
+console.log(true);
