@@ -120,21 +120,3 @@ if (username && sinedUP) {
 } else {
   console.log("please sign up");
 }
-
-let tamo = "tamara";
-let tam = 0;
-
-if ("tamara" && 0) {
-  console.log("welcome back");
-} else {
-  console.log("please sign up");
-}
-
-tamo = "tamara";
-tam = 1;
-
-if ("tamara" && 1) {
-  console.log("welcome back");
-} else {
-  console.log("please sign up");
-}

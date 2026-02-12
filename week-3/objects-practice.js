@@ -85,3 +85,18 @@ console.log("Object.entries:", entries);
 
 const flattenedEntries = entries.flat();
 console.log("Flattened entries:", flattenedEntries);
+
+////example
+
+let myMovie = {
+  title: "godfather",
+  year: 1990,
+  actors: ["brando", "pacino"],
+  movieTitle() {
+    return `The movie name is ${this.title} and the actors are ${this.actors}`;
+  },
+};
+
+console.log(myMovie.movieTitle());
+
+mocieTitle();
