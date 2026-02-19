@@ -99,28 +99,37 @@ console.log(newCar.charge());
 console.log(car.drive());
 
 console.log("---------------------");
-
+///////////////////////////////////////////////////////////
 class Garage {
-  constructor(garageName, array = [], price) {
+  constructor(garageName, cars = [], price) {
     this.garageName = garageName;
-    this.array = array;
-    this.price = price;
+    this.cars = cars;
   }
-  addCar(newCars) {
-    this.array.push(newCars);
+  addCar(car) {
+    this.cars.push(car);
   }
   listCars() {
-    return this.array;
+    return this.cars;
   }
+
   findExspensive(limit) {
     let result = [];
-    for (let element of this.array) {
-      if (element > limit) {
-        result.push(element);
+
+    for (let car of this.cars) {
+      if (car.price > limit) {
+        result.push(car.brand);
       }
     }
     return result;
   }
 }
 
-const carArray = new Garage();
+// const carArray = new Garage("GARAGE", ["BMW", "Mercedes", "Toyota"]);
+// console.log(carArray.cars);
+
+//console.log(carArray.listCars());
+// carArray.addCar({ brand: "BMW", price: 50000 });
+// carArray.addCar({ brand: "Toyota", price: 20000 });
+// carArray.addCar({ brand: "Mercedes", price: 70000 });
+
+console.log(carArray.findExspensive(40000));
